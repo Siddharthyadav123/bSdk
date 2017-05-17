@@ -1,0 +1,183 @@
+{
+	"conversation" : {
+		"from" : "5w47394784104",
+		"to" : "455308117027085",
+		"applicationId" : "72018127503568257761"
+	},
+	"messages" : [{
+                    "id" : "mid.1486016734623909129163442002",
+               	    "from" : "5w47394784104",
+               		"to" : "455308117027085",
+                 	"message": {
+                 		"type": "custom",
+                 		"card": {
+                 			"templateType": "RecieptCardTemplate",
+                 			"content": [{
+                 				"element": {
+                 					"elementStyle": "rowHeader",
+                 					"title": {
+                 						"type": "label",
+                 						"text": "Confirmation",
+                 						"style": {
+                 							"textcolor": "#000000"
+                 						}
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#F1F0F0"
+                 				}
+                 			},
+                 			{
+                 				"element": {
+                 					"title": {
+                 						"type": "label",
+                 						"text": "Current Account",
+                 						"style": {
+                 							"textcolor": "#000000",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"subtitle": {
+                 						"type": "label",
+                 						"text": "debit",
+                 						"style": {
+                 							"textcolor": "#F1F0F0",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"image": {
+                 						"type": "image",
+                 						"imagetype": "png",
+                 						"imageName": "debitcard01",
+                 						"imageUrl": "http: //google.com"
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#FFFFFF"
+                 				}
+                 			},
+                 			{
+                 				"element": {
+                 					"title": {
+                 						"type": "label",
+                 						"text": "Bull Market Continues to Rally",
+                 						"style": {
+                 							"textcolor": "#000000",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"subtitle": {
+                 						"type": "label",
+                 						"text": "The markets react positively to ",
+                 						"style": {
+                 							"textcolor": "#F1F0F0",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"image": {
+                 						"type": "image",
+                 						"imagetype": "png",
+                 						"imageName": "debitcard01",
+                 						"imageUrl": "http: //google.com"
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#FFFFFF"
+                 				}
+                 			},
+                 			{
+                 				"element": {
+                 					"title": {
+                 						"type": "label",
+                 						"text": "Saving Account",
+                 						"style": {
+                 							"textcolor": "#000000",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"subtitle": {
+                 						"type": "label",
+                 						"text": "credited",
+                 						"style": {
+                 							"textcolor": "#F1F0F0",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"image": {
+                 						"type": "image",
+                 						"imagetype": "png",
+                 						"imageName": "debitcard01",
+                 						"imageUrl": "http: //google.com"
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#FFFFFF"
+                 				}
+                 			},
+                 			{
+                 				"element": {
+                 					"elementStyle": "recieptDetails",
+                 					"label1": {
+                 						"type": "label",
+                 						"text": "Paid with",
+                 						"style": {
+                 							"textcolor": "#A3A3A3",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"details1": {
+                 						"type": "label",
+                 						"text": "Paid with",
+                 						"style": {
+                 							"textcolor": "#000000",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"label2": {
+                 						"type": "label",
+                 						"text": "ship to",
+                 						"style": {
+                 							"textcolor": "#A3A3A3",
+                 							"textsize": ""
+                 						}
+                 					},
+                 					"details2": {
+                 						"type": "label",
+                 						"text": "Paid with",
+                 						"style": {
+                 							"textcolor": "#000000",
+                 							"textsize": ""
+                 						}
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#FFFFFF"
+                 				}
+                 			},
+                 			{
+                 				"element": {
+                 					"elementStyle": "footer",
+                 					"title": {
+                 						"type": "total",
+                 						"text": "total",
+                 						"style": {
+                 							"textcolor": "#000000"
+                 						}
+                 					},
+                 					"subtitle": {
+                 						"type": "label",
+                 						"text": "$123",
+                 						"style": {
+                 							"textcolor": "#000000"
+                 						}
+                 					}
+                 				},
+                 				"style": {
+                 					"background-color": "#F1F0F0"
+                 				}
+                 			}]
+                 		}
+                 	}
+                  }
+	]
+}

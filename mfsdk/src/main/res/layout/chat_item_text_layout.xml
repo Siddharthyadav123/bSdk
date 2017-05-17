@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_item_text_layout_rly_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+    android:layout_marginTop="@dimen/chat_item_distance_top_bottom"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/bot_margin_left"
+        android:layout_marginRight="@dimen/bot_margin_right"
+        android:background="@drawable/bot"
+        android:visibility="visible" />
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rl_body_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_outgoing_text">
+
+        <TextView
+            android:id="@+id/chat_item_text_layout_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:text="Hi"
+            android:textColor="@color/white" />
+
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_tick_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/tick_msg_pending_or_failed"
+        android:tint="@color/colorPrimary" />
+</LinearLayout>

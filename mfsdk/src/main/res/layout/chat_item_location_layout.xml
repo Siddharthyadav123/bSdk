@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_location_layout_rly_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+    android:layout_marginTop="@dimen/chat_item_distance_top_bottom"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+        android:layout_marginLeft="@dimen/bot_margin_left"
+        android:layout_marginRight="@dimen/bot_margin_right"
+        android:background="@drawable/bot"
+        android:visibility="visible" />
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rl_body_Layout"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+        android:layout_marginTop="@dimen/chat_item_distance_top_bottom"
+        android:background="@drawable/layout_bg_with_gray_border_drawable">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height">
+
+            <com.morfeus.android.mfsdk.ui.widget.bubble.MfNetworkImageView
+                android:id="@+id/iv_header_image"
+                android:layout_width="@dimen/chat_card_width"
+                android:layout_height="@dimen/header_image_height"
+                android:layout_margin="0.8dp"
+                android:scaleType="fitXY" />
+
+            <com.morfeus.android.mfsdk.ui.widget.bubble.MfMediaStatusView
+                android:id="@+id/image_downloader_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/chat_item_location_layout_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_image_container"
+            android:paddingBottom="9dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="9dp" />
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_tick_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/tick_msg_pending_or_failed"
+        android:tint="@color/colorPrimary" />
+
+</LinearLayout>

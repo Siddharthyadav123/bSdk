@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_btn_with_status_info_layout_lin_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="@dimen/bot_height_width"
+        android:layout_height="@dimen/bot_height_width"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bot"
+        android:visibility="visible"
+        app:sriv_left_bottom_corner_radius="100dp"
+        app:sriv_left_top_corner_radius="100dp"
+        app:sriv_right_bottom_corner_radius="100dp"
+        app:sriv_right_top_corner_radius="100dp" />
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rl_body_layout"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/layout_bg_drawable">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_main_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyBubble"
+                android:gravity="left|center"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text="Order confirmation"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/chat_item_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/rl_grid_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_main_heading"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ProgressBar
+                        android:id="@+id/pb_start_cover"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/tv_start_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="$0"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Jan-Sep 2016"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ProgressBar
+                        android:id="@+id/pb_end_cover"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:max="100" />
+
+                    <TextView
+                        android:id="@+id/tv_end_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="$0"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Jan-Sep 2016"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/seprator_one"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_grid_container"
+                android:background="@color/lightGrey"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tv_show_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seprator_one"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Show Details"
+                android:textSize="@dimen/chat_item_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+</LinearLayout>

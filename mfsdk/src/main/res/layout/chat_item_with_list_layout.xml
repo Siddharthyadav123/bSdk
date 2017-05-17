@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_with_list_layout_rly_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+        android:layout_marginLeft="@dimen/bot_margin_left"
+        android:layout_marginRight="@dimen/bot_margin_right"
+        android:background="@drawable/bot"
+        android:visibility="visible" />
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rlBodyLayout"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/chat_item_distance_top_bottom"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/chat_item_distance_top_bottom"
+        android:background="@drawable/layout_bg_with_gray_border_drawable">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivMainImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner2" />
+
+            <TextView
+                android:id="@+id/tvChatHeaderMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Today's Top News"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_airline_button_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvChatHeaderSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvChatHeaderMain"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="President signs new bill peter send receive app..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_text_size" />
+
+            <TextView
+                android:id="@+id/tvReadMoreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvChatHeaderSub"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/blue_btn_drawable"
+                android:padding="7dp"
+                android:text="Read More"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LlListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlHeader"
+            android:orientation="vertical">
+
+            <!--   <include
+                   android:id="@+id/firstItem"
+                   layout="@layout/chat_list_item_layout" />
+
+               <include
+                   android:id="@+id/firstItem2"
+                   layout="@layout/chat_list_item_layout" />
+
+               <include
+                   android:id="@+id/moreButton"
+                   layout="@layout/chat_item_more_button" />-->
+
+
+        </LinearLayout>
+
+
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+</LinearLayout>

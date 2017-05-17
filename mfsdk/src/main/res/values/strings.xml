@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">android</string>
+    <string name="err_invalid_template_model">Error: Invalid template baseModel!</string>
+    <string name="err_invalid_component_model_type">Error: Invalid component model type!</string>
+    <string name="err_image_name_cannot_null">Error: image name can\'t be null!</string>
+    <string name="type_here">Type here...</string>
+    <string name="google_map_key">AIzaSyBYTk3a55UTbNIGaNn8Im7M8CUh5_0-JGg</string>
+    <string name="err_init_title">Initialization Fail</string>
+    <string name="err_init_msg">Fail to initialize sdk. Something went wrong, please try again.</string>
+    <string name="retry">Retry</string>
+    <string name="err_empty_username">Enter Username</string>
+    <string name="err_empty_password">Please enter password</string>
+    <string name="err_empty_otp">Please fill all the digits</string>
+
+    <string name="text_waiting_for_network">Waiting for Network...</string>
+    <string name="text_online">Online</string>
+    <string name="permission_message">This app needs to record audio and recognize your speech.</string>
+
+    <string name="text_logout">Logout</string>
+    <string name="text_login">Login</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_logout_info">Are you sure you want to logout?</string>
+    <string name="text_user_name">UserName</string>
+    <string name="text_password">Password</string>
+    <string name="text_what_can_i_help_you_with">What can i help you with?</string>
+    <string name="text_did_you_mean">Did you mean?</string>
+    <string name="text_loading">Loading...</string>
+    <string name="text_starting">Starting...</string>
+
+    <string name="enableGPSText">Enable GPS</string>
+    <string name="enableGPSBody">The app needs GPS to be enabled do you want to enable it in the settings?</string>
+    <string name="settingsGPSText">Settings</string>
+
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_webview_layout_rly_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="@dimen/bot_height_width"
+        android:layout_height="@dimen/bot_height_width"
+        android:layout_alignBaseline="@+id/rlBodyLayout"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bot"
+        android:visibility="visible"
+        app:sriv_left_bottom_corner_radius="100dp"
+        app:sriv_left_top_corner_radius="100dp"
+        app:sriv_right_bottom_corner_radius="100dp"
+        app:sriv_right_top_corner_radius="100dp" />
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rlBodyLayout"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/layout_bg_with_gray_border_drawable"
+        android:padding="0.8dp">
+
+
+        <com.morfeus.android.mfsdk.ui.widget.bubble.TouchyWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+</LinearLayout>

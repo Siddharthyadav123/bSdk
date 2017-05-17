@@ -1,0 +1,35 @@
+{
+ "conversation" : {
+  "from" : "11i08941433377",
+  "to" : "471484178208458"
+ },
+ "messages" : [{
+   "id" : "mid.1487848310259233975878302984",
+   "from" : "11i08941433377",
+   "to" : "471484178208458",
+   "message" : {
+    "type" : "custom",
+    "card" : {
+     "templateType" : "InfoCardTemplate",
+     "content" : [{
+       "element" : {
+        "title" : {
+         "text" : "Please login to continue",
+         "type" : "label"
+        },
+        "buttons" : [{
+          "text" : "Login Now...",
+          "type" : "button",
+          "action" : "authenticateWithLogin",
+		  "payload" : "1234567TGH",
+          "disable" : false
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mfsdk/mfsdk.iml" filepath="$PROJECT_DIR$/mfsdk/mfsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart chat sdk.iml" filepath="$PROJECT_DIR$/smart chat sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+    </modules>
+  </component>
+</project>

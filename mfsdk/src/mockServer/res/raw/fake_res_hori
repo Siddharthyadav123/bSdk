@@ -1,0 +1,207 @@
+{
+	"conversation" : {
+		"from" : "9w90545640958",
+		"to" : "244184166474074"
+	},
+	"messages" : [{
+			"id" : "mid.1487650249077599987396271921",
+			"from" : "9w90545640958",
+			"to" : "244184166474074",
+			"message" : {
+				"type" : "custom",
+				"card" : {
+					"templateType" : "InfoCardTemplate",
+					"content" : [{
+							"element" : {
+								"title" : {
+									"text" : "CITI CASH BACK VISA - xxxx 7308",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : " Your last bill amount is SGD 0.0 and due date is 2018-06-09 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "c3.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/c3.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"1147060745\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "SGD MAXISAVE (BASE) - xxxx 6006",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Available balance SGD 21357.38 Current balance SGD 21357.38 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "sa2.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/sa2.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"5245666848\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "NRI DOLLAR CHECKING - xxxx 7918",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Available balance USD 202.19 Current balance USD 202.19 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "sa2.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/sa2.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"0920410445\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									},
+									{
+                                        "text" : "Latest Transactions",
+                                        "type" : "button",
+                                        "payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"0920410445\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+                                        "action" : "postback",
+                                        "disable" : false
+                                    }
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "AUD GLOBAL FCY AC (GCB IND) - xxxx 3034",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Available balance AUD 15619.75 Current balance AUD 15619.75 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "sa2.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/sa2.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"0970829405\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "GBP SAVINGS A/C - xxxx 1847",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Available balance AUD 13643.41 Current balance AUD 13643.41 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "sa1.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/sa1.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"4790450585\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "CITI PRESTIGE CARD - xxxx 1219",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : " Your last bill amount is SGD 1380.87 and due date is 2016-09-05 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "c2.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/c2.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"4711736392\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}, {
+										"text" : "Pay Mimimum Amount",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"txn-moneymovement\",\"type\":null,\"data\":{\"payeeId\":\"4711736392\"},\"payeeCategory\":\"CREDIT_CARD\",\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}, {
+										"text" : "Pay Outstanding Amount",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"txn-moneymovement\",\"type\":null,\"data\":{\"payeeId\":\"4711736392\"},\"payeeCategory\":\"CREDIT_CARD\",\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}, {
+							"element" : {
+								"title" : {
+									"text" : "SGD SAVINGS - xxxx 2088",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Available balance SGD 4467.15 Current balance SGD 4467.15 ",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageName" : "sa1.png",
+									"imageUrl" : "https://s3.ap-south-1.amazonaws.com/citidemo/sa1.png"
+								},
+								"buttons" : [{
+										"text" : "Latest Transactions",
+										"type" : "button",
+										"payload" : "{\"payloadData\":{\"intent\":\"qry-transactionhistory\",\"type\":null,\"data\":{\"acctId\":\"5826226541\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1487650249074\"}",
+										"action" : "postback",
+										"disable" : false
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

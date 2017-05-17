@@ -1,0 +1,28 @@
+{
+	"conversation" : {
+		"from" : "5w47394784104",
+		"to" : "455308117027085",
+		"applicationId" : "72018127503568257761"
+	},
+	"messages" : [{
+			"id" : "mid.1486016734623909129163442002",
+			"from" : "5w47394784104",
+			"to" : "455308117027085",
+			"message" : {
+				"type" : "custom",
+				"card" : {
+					"templateType" : "InfoCardTemplate",
+					"content" : [{
+							"element" : {
+								"title" : {
+									"text" : "Login Fail",
+									"type" : "label"
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

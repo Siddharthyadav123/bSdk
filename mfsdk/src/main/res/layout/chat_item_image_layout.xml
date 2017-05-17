@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_image_layout_rly_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.SelectableRoundedImageView
+        android:id="@+id/iv_sender_image"
+        android:layout_width="@dimen/bot_height_width"
+        android:layout_height="@dimen/bot_height_width"
+        android:layout_alignBaseline="@+id/rlBodyLayout"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bot"
+        android:visibility="visible"
+        app:sriv_left_bottom_corner_radius="100dp"
+        app:sriv_left_top_corner_radius="100dp"
+        app:sriv_right_bottom_corner_radius="100dp"
+        app:sriv_right_top_corner_radius="100dp" />
+
+
+    <com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout
+        android:id="@+id/rlBodyLayout"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/iv_sender_image"
+        android:background="@drawable/layout_bg_drawable">
+
+        <ImageView
+            android:id="@+id/chat_item_image_layout_iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_image_height"
+            android:scaleType="center"
+            android:src="@drawable/banner2" />
+
+        <TextView
+            android:id="@+id/chat_item_image_layout_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_item_image_layout_iv_image"
+            android:paddingBottom="9dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="9dp" />
+    </com.morfeus.android.mfsdk.ui.widget.bubble.CurveRelativeLayout>
+
+</LinearLayout>

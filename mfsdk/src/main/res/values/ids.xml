@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ibc" type="id" />
+    <item name="etc" type="id" />
+
+    <!-- EditTextComponents IDs-->
+    <item name="component_edittext" type="id" />
+    <item name="component_edittext_leftbutton" type="id" />
+    <item name="component_edittext_rightbutton1" type="id" />
+    <item name="component_edittext_rightbutton2" type="id" />
+
+    <!-- InputViewComponent IDs-->
+    <item name="component_top_seprator" type="id" />
+    <item name="component_bottom_supporter_view" type="id" />
+    <item name="component_inputview" type="id" />
+    <item name="component_inputview_ibc" type="id" />
+    <item name="component_inputview_ibc_send" type="id" />
+
+    <!-- ToolbarViewComponent IDs-->
+    <item name="component_toolbarview" type="id" />
+    <item name="component_toolbarview_ibc_menu" type="id" />
+    <item name="component_toolbarview_ibc_text" type="id" />
+    <item name="component_toolbarview_ibc_emoji" type="id" />
+    <item name="component_toolbarview_ibc_voice" type="id" />
+    <item name="component_toolbarview_ibc_like" type="id" />
+
+    <!-- TabLayoutComponent IDs-->
+    <item name="component_tablayout" type="id" />
+
+    <!-- SubViewComponent IDs-->
+    <item name="component_subview" type="id" />
+    <item name="component_subview_menu" type="id" />
+    <item name="component_subview_smily" type="id" />
+    <item name="component_subview_setting" type="id" />
+    <item name="component_subview_feedback" type="id" />
+    <item name="component_subview_emoji_iv_temp" type="id" />
+    <item name="component_subview_likedislike" type="id" />
+    <item name="component_subview_audioRecord" type="id" />
+
+    <!-- MFEditorComponent IDs-->
+    <item name="component_mf_editor" type="id" />
+    <item name="component_suggestion_view" type="id" />
+    <item name="component_subview_voice" type="id" />
+
+    <!-- MenuSubViewId IDs-->
+    <item name="component_menu_subview" type="id" />
+    <item name="component_menu_subview_image" type="id" />
+    <item name="component_menu_subview_label" type="id" />
+
+    <item name="card_loading_shadow_image_view" type="id" />
+</resources>

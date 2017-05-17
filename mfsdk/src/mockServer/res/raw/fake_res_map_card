@@ -1,0 +1,124 @@
+{
+	"conversation": {
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"applicationId": "72018127503568257761"
+	},
+	"messages": [{
+		"id": "mid.1486016734623909129163442002",
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"message": {
+			"type": "custom",
+			"card": {
+				"templateType": "MapCardTemplateWithDetails",
+				"content": [{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Your creditcard bill is due soon.Pay now.",
+							"style": {
+								"textcolor": "#000000"
+							}
+						}
+					},
+					"style": {
+						"background-color": "#AA44FF"
+					}
+				},
+				{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Sid",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "$12000",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"image": {
+							"type": "image",
+							"imagetype": "png",
+							"imageName": "receiver_topmale",
+							"imageUrl": "http://google.com"
+						}
+					}
+				},
+				{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Current Account",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "XXXX-9876",
+							"style": {
+								"textcolor": "#000000"
+							}
+						}
+					}
+				},
+				{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Very Good",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"rate": {
+							"type": "rate",
+							"value": "2.5",
+							"style": {
+								"rateIcon": "star.png",
+								"rateOff": "start_off.png"
+							}
+						},
+						"map": {
+							"type": "image",
+							"latitude": "21.1458",
+							"longitude": "79.0882",
+							"style": {
+								"pin-image": "pin.png"
+							}
+						}
+					}
+				},
+				{
+					"element": {
+						"elementStyle": "rowButton",
+						"buttons": [{
+							"type": "button",
+							"text": "Watch Later",
+							"action": "postback",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#0084FF"
+							}
+						},
+						{
+							"type": "button",
+							"text": "Show Less of Such Tips",
+							"action": "postback",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#0084FF"
+							}
+						}]
+					}
+				}]
+			}
+		}
+	}]
+}

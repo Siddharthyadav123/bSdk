@@ -1,0 +1,72 @@
+{
+	"conversation": {
+		"from": "NA",
+		"to": "NA",
+		"applicationId": "NA"
+	},
+	"messages": [{
+		"id": "mid.1486995494897786638724533710",
+		"from": "NA",
+		"to": "NA",
+		"message": {
+			"type": "text",
+			"text": "Here are all your debit cards. Which one would you like to block?"
+		}
+	}, {
+		"id": null,
+		"from": "NA",
+		"to": "NA",
+		"message": {
+			"type": "custom",
+			"card": {
+				"templateType": "ListCardTemplate",
+				"content": [{
+					"element": {
+						"title": {
+							"text": "Visa",
+							"type": "label"
+						},
+						"subtitle": {
+							"text": "485446XXXXXX3433",
+							"type": "label"
+						},
+						"image": {
+							"type": "image",
+							"imageName": "visa-logo.png",
+							"imageUrl": "https://s3.ap-south-1.amazonaws.com/hdfcdemo/visa-logo.png"
+						},
+						"buttons": [{
+							"text": "Block",
+							"type": "button",
+							"action": "{\"payloadData\":{\"intent\":\"txn-blockcard\",\"type\":null,\"data\":{\"acctId\":\"3433\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1486995494906\"}",
+							"buttonType": "postback"
+						}]
+					}
+				}, {
+					"element": {
+						"title": {
+							"text": "Visa",
+							"type": "label"
+						},
+						"subtitle": {
+							"text": "438624XXXXXX8690",
+							"type": "label"
+						},
+						"image": {
+							"type": "image",
+							"imageName": "visa-logo.png",
+							"imageUrl": "https://s3.ap-south-1.amazonaws.com/hdfcdemo/visa-logo.png"
+						},
+						"buttons": [{
+							"text": "Block",
+							"type": "button",
+							"action": "{\"payloadData\":{\"intent\":\"txn-blockcard\",\"type\":null,\"data\":{\"acctId\":\"8690\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1486995494906\"}",
+							"buttonType": "postback"
+						}]
+					}
+				}],
+				"elementStyle": "compact"
+			}
+		}
+	}]
+}

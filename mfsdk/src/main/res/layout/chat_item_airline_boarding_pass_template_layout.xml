@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/layout_bg_blue_drawable">
+
+        <ImageView
+            android:id="@+id/ivHeaderPlaneImage"
+            android:layout_width="@dimen/chat_item_small_airline_image_size_width"
+            android:layout_height="@dimen/chat_item_small_airline_image_size_height"
+            android:layout_margin="20dp"
+            android:src="@drawable/airplane" />
+
+        <LinearLayout
+            android:id="@+id/labelTerminalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_toLeftOf="@+id/labelGateInfo"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvLabelGate"
+                android:text="Terminal"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+            <TextView
+                android:id="@+id/tvTerminalNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/labelGateInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelGate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Gate"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+            <TextView
+                android:id="@+id/tvGateNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvLabelGate"
+                android:text="C24"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sepratorView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/labelGateInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:background="@color/bluelight"></View>
+
+        <RelativeLayout
+            android:id="@+id/rlPassengersSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sepratorView"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvLabelPassengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passengers"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+            <TextView
+                android:id="@+id/tvLabelSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Seat"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llPassangerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlPassengersSeat"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <!--Dummy entires-->
+            <include layout="@layout/airline_pessanger_list_item_layout" />
+
+            <include layout="@layout/airline_pessanger_list_item_layout" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/sepratorViewOfPassengersInfo"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/llPassangerList"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="5dp"
+            android:background="@color/bluelight"></View>
+
+        <LinearLayout
+            android:id="@+id/llFlightDepartsInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sepratorViewOfPassengersInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llayoutFlight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLabelFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flight"
+                    android:textColor="@color/SkyBlue"
+                    android:textSize="@dimen/chat_item_label_text_size" />
+
+                <TextView
+                    android:id="@+id/tvFlightNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="KL5050"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/chat_item_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llayoutBoards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tvLabelBoards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boards"
+                    android:textColor="@color/SkyBlue"
+                    android:textSize="@dimen/chat_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvBoardingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="7:30 AM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/chat_item_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutDeparts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="25dp">
+
+                <TextView
+                    android:id="@+id/tvLabelDeparts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departs"
+                    android:textColor="@color/SkyBlue"
+                    android:textSize="@dimen/chat_item_text_size" />
+
+                <TextView
+                    android:id="@+id/tvDepartsTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="8:30 AM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/chat_item_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFlightsToFromInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFlightDepartsInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left">
+
+            <TextView
+                android:id="@+id/tvFlightFromLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="San Francisco"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+
+            <TextView
+                android:id="@+id/tvFlightToLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="New York"
+                android:textColor="@color/SkyBlue"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFlightsToFromWithPlaneImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlFlightsToFromInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/tvFlightFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="SFO"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_airline_big_text_size" />
+
+
+            <TextView
+                android:id="@+id/tvFlightTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="JFK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/chat_item_airline_big_text_size" />
+
+            <ImageView
+                android:id="@+id/ivToFromFlightImage"
+                android:layout_width="@dimen/chat_item_big_airline_image_size_width"
+                android:layout_height="@dimen/chat_item_big_airline_image_size_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/aeroplane" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvBoardingPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlFlightsToFromWithPlaneImage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/layout_bg_white_drawable"
+            android:padding="10dp"
+            android:text="View Boarding Pass"
+            android:textAlignment="center"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/chat_item_airline_button_text_size" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

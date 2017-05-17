@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv_tick_image"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:singleLine="true"
+                android:text="What can i help you with?"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_tick_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?android:selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/ic_clear_black_24dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_voice_ui_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top_hint"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_record_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_record" />
+
+
+            <com.morfeus.android.mfsdk.ui.widget.audio.WaveformView
+                android:id="@+id/waveform_view"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/iv_record_image"
+                android:layout_marginTop="5dp" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/waveform_view"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_card_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

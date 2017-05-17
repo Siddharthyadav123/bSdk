@@ -1,0 +1,130 @@
+{
+	"conversation": {
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"applicationId": "72018127503568257761"
+	},
+	"messages": [{
+		"id": "mid.1486016734623909129163442002",
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"message": {
+			"type": "custom",
+			"card": {
+				"templateType": "InfoCardTemplate",
+				"content": [{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Current Account",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"cardimage": {
+							"type": "image",
+							"imagetype": "png",
+							"imagename": "aeroplane_blue",
+							"imageUrl": "http://google.com"
+						},
+						"buttons": [{
+							"type": "button",
+							"text": "See Last Transaction 1",
+							"action": "SendMessage",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF",
+								"background-color": ""
+							}
+						}]
+					}
+				},
+				{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Current Account",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"cardimage": {
+							"type": "image",
+							"imagetype": "png",
+							"imagename": "aeroplane_blue",
+							"imageurl": "http://google.com"
+						},
+						"buttons": [{
+							"type": "button",
+							"text": "See Last Transaction 2",
+							"action": "SendMessage",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF",
+								"background-color": ""
+							}
+						}]
+					}
+				},
+				{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Current Account",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF"
+							}
+						},
+						"cardimage": {
+							"type": "image",
+							"imagetype": "png",
+							"imagename": "aeroplane_blue",
+							"imageurl": "http://google.com"
+						},
+						"buttons": [{
+							"type": "button",
+							"text": "See Last Transaction 3",
+							"action": "SendMessage",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#2222FF",
+								"background-color": ""
+							}
+						},
+                         						{
+                         							"type": "button",
+                         							"text": "Block Card 3",
+                         							"action": "SendMessage",
+                         							"payload": "BlockCard - XXXX-9876",
+                         							"style": {
+                         								"textcolor": "#2222FF",
+                         								"background-color": ""
+                         							}
+                         						}]
+					}
+				}]
+			}
+		}
+	}]
+}

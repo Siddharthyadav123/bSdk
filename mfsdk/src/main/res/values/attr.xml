@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleTemplateView">
+        <attr name="message" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleImageTemplateView">
+        <attr name="primaryMessage" format="string" />
+        <attr name="secondaryMessage" format="string" />
+        <attr name="defaultImage" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MfInfoCardTemplateView">
+        <attr name="MfICWBPrimaryMessage" format="string" />
+        <attr name="MfICWBSecondaryMessage" format="string" />
+        <attr name="MfICWBDefaultImage" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="CurveRelativeLayout">
+        <attr name="cr_corner_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_hasShadow" format="boolean" />
+        <attr name="cpb_progressColor" format="string" />
+        <attr name="cpb_backgroundColor" format="string" />
+        <attr name="cpb_title" format="string" />
+        <attr name="cpb_titleColor" format="string" />
+        <attr name="cpb_subtitle" format="string" />
+        <attr name="cpb_subtitleColor" format="string" />
+        <attr name="cpb_strokeWidth" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+</resources>

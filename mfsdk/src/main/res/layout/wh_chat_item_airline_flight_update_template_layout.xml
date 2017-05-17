@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlFLightStatusInfo"
+        android:layout_width="@dimen/chat_card_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/chat_bubble_all_side_margin"
+        android:background="@drawable/chat_bubble_incoming"
+        android:paddingBottom="@dimen/chat_bubble_bottom_padding"
+        android:paddingLeft="@dimen/chat_bubble_arrow_side_padding"
+        android:paddingRight="@dimen/chat_bubble_arrow_opposite_side_padding"
+        android:paddingTop="@dimen/chat_bubble_top_padding">
+
+        <ImageView
+            android:id="@+id/ivHeaderPlaneImage"
+            android:layout_width="@dimen/chat_item_small_airline_image_size_width"
+            android:layout_height="@dimen/chat_item_small_airline_image_size_height"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/dark_blue_airplane" />
+
+        <LinearLayout
+            android:id="@+id/llayoutFlightStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLabelFLightStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Flight Status"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+            <TextView
+                android:id="@+id/tvFLightStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="DELAYED"
+                android:textColor="@color/Red"
+                android:textSize="@dimen/chat_item_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sepratorViewOfPassengersInfo"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/llayoutFlightStatus"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/lightGray">
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/rlPassengersSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sepratorViewOfPassengersInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvLabelPassengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passengers"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+            <TextView
+                android:id="@+id/tvLabelSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Seat"
+                android:textColor="@color/Gray"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llPassengersSeatInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlPassengersSeat"
+            android:orientation="vertical">
+
+            <!--Dummy entires-->
+            <include layout="@layout/airline_black_text_pessanger_list_item_layout" />
+
+            <include layout="@layout/airline_black_text_pessanger_list_item_layout" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sepratorViewOfFlightInfo"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/llPassengersSeatInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="7dp"
+            android:alpha="0.5"
+            android:background="@color/lightGray">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/llFlightDepartsInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sepratorViewOfFlightInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llayoutFlight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLabelFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flight"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/chat_item_label_text_size" />
+
+                <TextView
+                    android:id="@+id/tvFlightNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="KL0605"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/chat_item_text_size" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llayoutBoards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tvLabelBoards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boards"
+                    android:textColor="@color/lightGray"
+                    android:textSize="@dimen/chat_item_label_text_size" />
+
+                <TextView
+                    android:id="@+id/tvBoardingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="10:10 AM"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/chat_item_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayoutArrives"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tvLabelArrives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrives"
+                    android:textColor="@color/gray"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvArrivesTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="12:00 AM"
+                    android:textColor="@color/Red"
+                    android:textSize="@dimen/chat_item_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFlightsToFromInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFlightDepartsInfo"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvFlightFromLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Amsterdam"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+
+            <TextView
+                android:id="@+id/tvFlightToLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="San Francisco"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/chat_item_label_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlFlightsToFromWithPlaneImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlFlightsToFromInfo"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tvFlightFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="SFO"
+                android:textColor="@color/NavyBlue"
+                android:textSize="@dimen/chat_item_airline_big_text_size" />
+
+
+            <TextView
+                android:id="@+id/tvFlightTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="JFK"
+                android:textColor="@color/NavyBlue"
+                android:textSize="@dimen/chat_item_airline_big_text_size" />
+
+            <ImageView
+                android:id="@+id/ivToFromFlightImage"
+                android:layout_width="@dimen/chat_item_big_airline_image_size_width"
+                android:layout_height="@dimen/chat_item_big_airline_image_size_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/blue_plane" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llDeliverInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rlFlightsToFromWithPlaneImage"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvReceiveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="05:45 am"
+                android:textColor="@color/darkGrey"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/ivStatusImage"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:padding="2dp"
+                android:src="@drawable/msg_status_client_read"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

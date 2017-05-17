@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MfAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MfNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/axisThemeColor</item>
+    </style>
+
+    <style name="DialogFragmentStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+
+
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="cpb_progressColor">@color/circular_progress_default_progress</item>
+        <item name="cpb_hasShadow">true</item>
+        <item name="cpb_strokeWidth">20</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Holo.CircularPro2" parent="Widget.ProgressBar.CircularProgressBar">
+        <item name="cpb_hasShadow">false</item>
+        <item name="cpb_strokeWidth">5</item>
+    </style>
+</resources>

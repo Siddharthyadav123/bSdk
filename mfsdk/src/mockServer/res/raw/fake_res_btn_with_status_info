@@ -1,0 +1,97 @@
+{
+	"conversation": {
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"applicationId": "72018127503568257761"
+	},
+	"messages": [{
+		"id": "mid.1486016734623909129163442002",
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"message": {
+			"type": "custom",
+			"card": {
+				"templateType": "ButtonCardTemplateWithStatusInfo",
+				"content": [{
+					"element": {
+						"title": {
+							"type": "label",
+							"text": "Current Account",
+							"style": {
+								"textcolor": "#000000"
+							}
+						}
+					}
+				},
+				{
+					"element": {
+						"elementStyle": "cardInfo",
+						"title": {
+							"type": "label",
+							"text": "$1000",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "jan",
+							"style": {
+								"textcolor": "#808080"
+							}
+						},
+						"gauge": {
+							"type": "gauge",
+							"coverPercentage": "10",
+							"style": {
+								"background-color": "#FFFFFF",
+								"fill-color": "#00FF00"
+							}
+						}
+					}
+				},
+				{
+					"element": {
+						"elementStyle": "cardInfo",
+						"title": {
+							"type": "label",
+							"text": "$2000",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "feb",
+							"style": {
+								"textcolor": "#808080"
+							}
+						},
+						"gauge": {
+							"type": "gauge",
+							"coverPercentage": "20",
+							"style": {
+								"background-color": "#FFFFFF",
+								"fill-color": "#00FF00"
+							}
+						}
+					}
+				},
+				{
+					"element": {
+						"rowButton": "true",
+						"buttons": [{
+							"type": "button",
+							"text": "View more",
+							"action": "postback",
+							"payload": "Last TRansaction - XXXX-9876",
+							"style": {
+								"textcolor": "#000000"
+							}
+						}]
+					}
+				}]
+			}
+		}
+	}]
+}

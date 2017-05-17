@@ -1,0 +1,148 @@
+{
+	"conversation" : {
+		"from" : "5w47394784104",
+		"to" : "455308117027085",
+		"applicationId" : "72018127503568257761"
+	},
+	"messages" : [{
+                    "id" : "mid.1486016734623909129163442002",
+               	    "from" : "5w47394784104",
+               		"to" : "455308117027085",
+                    "message": {
+                      "type": "custom",
+                      "card": {
+                        "templateType": "ListCardTemplate",
+                        "content": [
+                          {
+                            "element": {
+                              "elementStyle": "rowLarge",
+                              "title": {
+                                "type": "label",
+                                "text": "Current Account",
+                                "style": {
+                                  "textcolor": "#000000"
+                                }
+                              },
+                              "subtitle": {
+                                "type": "label",
+                                "text": "debit",
+                                "style": {
+                                  "textcolor": "#808080"
+                                }
+                              },
+                              "image": {
+                                "type": "image",
+                                "imagetype": "png",
+                                "imageName": "debitcard01",
+                                "imageUrl": "http://google.com"
+                              },
+                              "buttons": [
+                                {
+                                  "type": "button",
+                                  "text": "Shop Now",
+                                  "action": "postback",
+                                  "payload": "Last TRansaction - XXXX-9876",
+                                  "style": {
+                                    "textcolor": "#000000"
+                                  }
+                                }
+                              ]
+                            },
+                            "style": {
+                              "background-color": "#FFFFFF"
+                            }
+                          },
+                          {
+                            "element": {
+                              "title": {
+                                "type": "label",
+                                "text": "Bull Market Continues to Rally",
+                                "style": {
+                                  "textcolor": "#000000"
+                                }
+                              },
+                              "subtitle": {
+                                "type": "label",
+                                "text": "The markets react positively to ",
+                                "style": {
+                                  "textcolor": "#808080"
+                                }
+                              },
+                              "description": {
+                                "type": "label",
+                                "text": "peterssendreceiveapp.ngrok.io",
+                                "style": {
+                                  "textcolor": "#000000"
+                                }
+                              },
+                              "image": {
+                                "type": "image",
+                                "imagetype": "png",
+                                "imageName": "debitcard01",
+                                "imageUrl": "http://google.com"
+                              }
+                            },
+                            "style": {
+                              "background-color": "#FFFFFF"
+                            }
+                          },
+                          {
+                            "element": {
+                              "title": {
+                                "type": "label",
+                                "text": "Saving Account",
+                                "style": {
+                                  "textcolor": "#000000"
+                                }
+                              },
+                              "subtitle": {
+                                "type": "label",
+                                "text": "credited",
+                                "style": {
+                                  "textcolor": "#808080"
+                                }
+                              },
+                              "image": {
+                                "type": "image",
+                                "imagetype": "png",
+                                "imageName": "ic_conversion",
+                                "imageUrl": "http://google.com"
+                              },
+                              "buttons": [
+                                {
+                                  "type": "button",
+                                  "text": "Buy",
+                                  "action": "postback",
+                                  "payload": "Last TRansaction - XXXX-9876",
+                                  "style": {
+                                    "textcolor": "#000000"
+                                  }
+                                }
+                              ]
+                            },
+                            "style": {
+                              "background-color": "#FFFFFF"
+                            }
+                          },
+                          {
+                            "element": {
+                              "elementStyle": "rowButton",
+                              "buttons": [
+                                {
+                                  "type": "button",
+                                  "text": "View more",
+                                  "action": "postback",
+                                  "payload": "Last TRansaction - XXXX-9876",
+                                  "style": {
+                                    "textcolor": "#0000FF"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+	]
+}

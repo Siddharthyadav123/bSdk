@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "491123940293",
+    "firebase_url": "https://morfeus-notification.firebaseio.com",
+    "project_id": "morfeus-notification",
+    "storage_bucket": "morfeus-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491123940293:android:28b0421b51b4cda9",
+        "android_client_info": {
+          "package_name": "com.morfeus.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491123940293-uft5ci65d507aopc398uhvt620tuveha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYxQGtU8Bw29Y38ac3bjOgaVBHHUmZvQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,172 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.google.protobuf'
+apply from: '../config/quality.gradle'
+apply plugin: 'jacoco'
+
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        https://morfeus-dev.active.ai/morfeus/v1/channels/9a93803832095/message
+//        hdfc-sit.active.ai/morfeus
+        //https://axis-sit.active.ai/morfeus/v1/channels/162a11060497176/message
+        //morfeus-dev.active.ai/morfeus
+        //https://morfeus-demo.active.ai/morfeus/v1/
+        buildConfigField 'String', 'BASE_URL', '"morfeus-demo.active.ai/morfeus"'
+        buildConfigField 'String', 'UI_CONFIG_FILE', '"MfUIConfig.json"'
+        buildConfigField 'String', 'UI_LOGIN_CONFIG_FILE', '"MfUILoginConfgi.json"'
+        buildConfigField 'String', 'UI_OTP_CONFIG_FILE', '"MfUIOTPConfig.json"'
+        buildConfigField 'String', 'UI_DEFAULT_CARD_STYLE_FILE', '"WA_MFCardStyle.json"'
+        buildConfigField 'String', 'LANGUAGE_CONFIG_FILE', '"MfLanguages.json"'
+        buildConfigField 'String', 'LOCATION_CONFIG_FILE', '"MfLocationMapConfig.json"'
+        buildConfigField 'boolean', 'ENABLE_LOG', "true"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled = true
+        }
+    }
+
+    testOptions {
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
+
+    productFlavors {
+        mock {
+
+        }
+
+        prod {
+
+        }
+
+        mockServer {
+            useLibrary 'org.apache.http.legacy'
+            buildConfigField 'String', 'botId', '"11a80171753554"'
+        }
+    }
+
+    // Remove mock release
+    android.variantFilter { variant ->
+        if (variant.buildType.name.equals('release')
+                && variant.getFlavors().get(0).name.equals('mock')) {
+            variant.setIgnore(true);
+        }
+    }
+
+}
+ext {
+    supportLibraryVersion = '24.2.1'
+    grpcVersion = '1.1.2'
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.2.0'
+    }
+    plugins {
+        grpc {
+            artifact = "io.grpc:protoc-gen-grpc-java:${grpcVersion}"
+        }
+    }
+    generateProtoTasks {
+        all().each {
+            task ->
+                task.builtins {
+                    remove javanano
+                    java {
+                    }
+                }
+                task.plugins {
+                    grpc {
+                    }
+                }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.guava:guava:20.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+
+    compile 'javax.annotation:javax.annotation-api:1.2'
+    compile 'com.google.android.gms:play-services:10.2.0'
+
+    compile("io.grpc:grpc-protobuf:${grpcVersion}") {
+        exclude module: 'jsr305'
+    }
+    compile("io.grpc:grpc-stub:${grpcVersion}") {
+        exclude module: 'jsr305'
+    }
+    compile("io.grpc:grpc-auth:${grpcVersion}") {
+        exclude module: 'jsr305'
+    }
+    compile("io.grpc:grpc-okhttp:${grpcVersion}") {
+        exclude module: 'jsr305'
+    }
+
+    // OAuth2 for Google API
+    compile("com.google.auth:google-auth-library-oauth2-http:0.6.0") {
+        exclude module: 'jsr305'
+        exclude module: 'httpclient'
+    }
+
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+
+    // Android Testing Support Library's runner and rules
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    androidTestCompile 'com.squareup.spoon:spoon-client:1.7.0'
+    // Dependencies for Android unit tests
+    androidTestCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile 'com.google.dexmaker:dexmaker:1.2'
+    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.2'
+
+    // Dependencies for Android unit tests
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    // Resolve conflicts between main and test APK:
+    androidTestCompile 'com.android.support:support-annotations:24.2.1'
+    androidTestCompile 'com.android.support:support-v4:24.2.1'
+    androidTestCompile 'com.android.support:recyclerview-v7:24.2.1'
+    androidTestCompile 'com.android.support:appcompat-v7:24.2.1'
+    androidTestCompile 'junit:junit:4.12';
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+    testCompile 'org.powermock:powermock-module-junit4:1.6.4'
+    testCompile "org.powermock:powermock-api-mockito:1.6.4"
+    testCompile "org.powermock:powermock-module-junit4-rule:1.6.4"
+    testCompile "org.powermock:powermock-classloading-xstream:1.6.4"
+
+
+    testCompile "org.robolectric:robolectric:3.2.2"
+//    compile project(':volley')
+}
+
+apply plugin: 'com.google.gms.google-services'

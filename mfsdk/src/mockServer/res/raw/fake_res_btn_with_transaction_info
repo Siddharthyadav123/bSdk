@@ -1,0 +1,101 @@
+{
+	"conversation": {
+		"from": "5w47394784104",
+		"to": "455308117027085",
+		"applicationId": "72018127503568257761"
+	},
+	"messages": [{
+		"id": "mid.1486016734623909129163442002",
+		"from": "5w47394784104",
+		"to": "455308117027085",
+	"message": {
+		"type": "custom",
+		"card": {
+			"templateType": "ButtonCardTemplateWithTransactionInfo",
+			"content": [{
+				"element": {
+					"title": {
+						"type": "label",
+						"text": "Your creditcard bill is due soon.Pay now.",
+						"style": {
+							"textcolor": "#282F46"
+						}
+					}
+				}
+			},
+			{
+				"element": {
+					"elementStyle": "accountInfo",
+					"elementArray": [{
+						"title": {
+							"type": "label",
+							"text": "$300000",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "Money In",
+							"style": {
+								"textcolor": "#A3A3A3"
+							}
+						},
+						"image": {
+							"type": "image",
+							"imagetype": "png",
+							"imageName": "debitcard01",
+							"imageUrl": "http: //google.com"
+						}
+					},
+					{
+						"title": {
+							"type": "label",
+							"text": "$2000",
+							"style": {
+								"textcolor": "#000000"
+							}
+						},
+						"subtitle": {
+							"type": "label",
+							"text": "Money Out",
+							"style": {
+								"textcolor": "#A3A3A3"
+							}
+						},
+						"image": {
+							"type": "image",
+							"imagetype": "png",
+							"imageName": "debitcard01",
+							"imageUrl": "http: //google.com"
+						}
+					}]
+				}
+			},
+			{
+				"element": {
+					"elementStyle": "rowButton",
+					"buttons": [{
+						"type": "button",
+						"text": "Pay Full Amount",
+						"action": "postback",
+						"payload": "Last TRansaction - XXXX-9876",
+						"style": {
+							"textcolor": "#0084FF"
+						}
+					},
+					{
+						"type": "button",
+						"text": "Pay Minimum Amount",
+						"action": "postback",
+						"payload": "Last TRansaction - XXXX-9876",
+						"style": {
+							"textcolor": "#0084FF"
+						}
+					}]
+				}
+			}]
+		}
+	}
+	}]
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bullMarketTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+        android:layout_marginTop="10dp"
+        android:text="Classic white T-shirt"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/chat_item_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/rightImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/chat_item_left_right_margin_left"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plain_t_shirt" />
+
+    <TextView
+        android:id="@+id/marketsReactTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bullMarketTextView"
+        android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/rightImageView"
+        android:maxLines="2"
+        android:text="100% Cotton,200% Comfortable peterssendreceiverapp.ngrok.io"
+        android:textColor="@color/lightCyan"
+        android:textSize="@dimen/chat_item_label_text_size" />
+
+    <TextView
+        android:id="@+id/tvreadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marketsReactTextView"
+        android:layout_marginLeft="@dimen/chat_item_left_right_margin_left"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_drwable_blue"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Shop Now"
+        android:textColor="@color/fadedBlue"
+        android:textSize="@dimen/chat_item_text_size" />
+
+    <View
+        android:id="@+id/downsepratorView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tvreadButton"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGrey" />
+</RelativeLayout>

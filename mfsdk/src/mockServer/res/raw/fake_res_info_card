@@ -1,0 +1,44 @@
+{
+	"conversation" : {
+		"from" : "5w47394784104",
+		"to" : "455308117027085",
+		"applicationId" : "72018127503568257761"
+	},
+	"messages" : [
+	    {
+			"id" : "mid.1486016734623909129163442002",
+			"from" : "5w47394784104",
+			"to" : "455308117027085",
+			"message" : {
+				"type" : "custom",
+				"card" : {
+					"templateType" : "InfoCardTemplate",
+					"content" : [{
+							"element" : {
+								"title" : {
+									"text" : "Lion Cat InfoCardSample",
+									"type" : "label"
+								},
+								"subtitle" : {
+									"text" : "Losing a wallet is painful but should not be an emergency. I will help you block your debit cards immediately. No more waiting on the phone.",
+									"type" : "label"
+								},
+								"image" : {
+									"type" : "image",
+									"imageUrl" : "https://i.imgur.com/pM2DvuM.jpg"
+								},
+								"buttons" : [{
+										"text" : "Block my Debit Card(s)",
+										"type" : "button",
+										"action" : "{\"payloadData\":{\"intent\":\"BLOCK-CARD-ACTION\",\"type\":null,\"data\":{\"message\":\"block cards\"},\"payeeCategory\":null,\"message\":null},\"timeStamp\":\"1486016734614\"}",
+										"buttonType" : "postback"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}
